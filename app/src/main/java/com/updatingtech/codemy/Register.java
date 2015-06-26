@@ -1,7 +1,10 @@
 package com.updatingtech.codemy;
 
 /**
- * Created by dam.duy.dung on 6/25/2015.
+ * @author: ddungz
+ * @purpose: send register request to server
+ * @param
+ * @output: json object
  */
 public class Register {
 }
