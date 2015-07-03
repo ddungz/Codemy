@@ -1,14 +1,16 @@
 package com.updatingtech.codemy;
 
+import android.app.Activity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.content.Intent;
 
 
-public class Codemy extends ActionBarActivity {
+public class Codemy extends Activity {
 
     private Button registerBtn;
     @Override
@@ -18,11 +20,13 @@ public class Codemy extends ActionBarActivity {
 
         registerBtn = (Button) findViewById(R.id.registerId);
         registerBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
             public void onClick(View v) {
-                Intent intent = new Intent(this, Register.class);
+                Intent intent = new Intent(Codemy.this, Register.class);
                 startActivity(intent);
             }
         });
+
     }
 
 
