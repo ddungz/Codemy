@@ -113,7 +113,7 @@ public class Register extends Activity implements View.OnClickListener {
             case R.id.registerId:
                 if(!validate())
                     Toast.makeText(getBaseContext(), "Enter your infor", Toast.LENGTH_SHORT).show();
-                //new HttpAsyncTask().execute("http://localhost:8080/user/register");
+                new HttpAsyncTask().execute("http://localhost:8080/user/register");
                 System.out.print("registerBTN clicked");
                 Log.i("CLICKED", "register button clicked");
                 Toast.makeText(getBaseContext(), "You've just clicked Register btn", Toast.LENGTH_SHORT).show();
